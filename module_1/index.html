@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY FIRST ASSIGNMENT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+  *{
+  box-sizing: border-box;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+.row{
+  margin-top:5% ;
+  margin-bottom: 5%;
+}
+h1{
+  margin-bottom: 15px;
+  text-align: center;
+  font-size:  50px;
+}
+.box{
+  width: 100%;
+  overflow: none;
+}
+
+.game-character{
+  overflow: none;
+  border: 4px solid black;
+  width: 100px;
+  height: 40px;
+  padding: 5px;
+  float: right;
+  margin-right: 36px;
+  margin-top: 0px;
+  position: relative;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+.content{
+   border: 5px solid black;
+  width: 90%;
+  height: auto;
+  margin: 2.5%;
+  color: black
+  font-size: 25px;
+  padding: 2%;
+  padding-top: 55px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.level1{
+  background-color:wheat;
+}
+.level2{
+  color:white ;
+  background-color: lavender;
+
+}
+.level3{
+background-color: beige;
+}
+/***********large device only*************/
+@media (min-width: 992px){
+  .col-lg-4{
+    float: left;
+    width: 33.33%;
+  }
+}
+/********************medium device only*************/
+@media(min-width: 768px) and (max-width: 991px){
+.col-md-6,.col-md-12{
+  float:left;
+}
+.col-md-6{
+  width: 50%;
+}
+.col-md-12{
+  margin-left: -10px;
+  width: 100%;
+}
+.level3{
+  margin-right: 65px;
+  width: 100px;
+}
+}
+@media (min-width: 0px) and (max-width: 767px){
+  .col-s-12{
+    float: left;
+    width: 100%;
+  }
+  .game-character{
+    margin-right: 30px;
+  }
+}
+</style>
+</head>
+<body>
+<h1>OUR MENU</h1>
+<div class="col-lg-4 col-md-6 col-sm-12">
+  <div class="box">
+    <p class="game-character level1">Chicken</P>
+      <p class="content">The domestic chicken or simply chicken (Gallus gallus domesticus) is a domesticated subspecies of the red junglefowl originally from Southeastern Asia. </p>
+  </div>
+</div>
+<div class="col-lg-4 col-md-6 col-s-12">
+  <div class="box">
+    <p class="game-character level2">Beef</p>
+      <p class="content">Beef is the culinary name for meat from cattle.In prehistoric times, humans hunted aurochs and later domesticated them. Since then, numerous breeds of cattle have been bred .</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-12 col-s-12">
+  <div class="box">
+    <p class="game-character level3">Sushi</p>
+      <p class="content">Sushi (すし, 寿司, 鮨, 鮓, pronounced [sɯɕiꜜ] or [sɯꜜɕi]) is a traditional Japanese dish of prepared vinegared rice (鮨飯, sushi-meshi), usually with some sugar and salt. </p>
+    </div>
+  </div>
+</body>
+</html>
