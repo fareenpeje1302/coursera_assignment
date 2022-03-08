@@ -3,13 +3,48 @@
 <head>
   <meta charset="utf-8">
   <title>Module 4 Solution Starter</title>
-  <script src="./script.js"></script>
-  <script src="./speakgoodbye.js"></script>
-  <script src="./speakhello.js"></script>
+ 
 </head>
 <body>
   <h1 style="text-align: center;">Module 4</h1>
   <p style="text-align: center;">Open console to see the output</p>
+  <script>
+    //////////////
+    (function () {
+
+var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+
+for (var i = 0; i < names.length; i++) {
+  var firstLetter = names[i].charAt(0).toLowerCase();
+
+  if (firstLetter === 'j') {
+    byeSpeaker(names[i]);
+  }
+  else {
+    helloSpeaker(names[i]);
+  }
+}
+
+})();
+//////////////////////////////////////////
+function byeSpeaker(name)
+{
+//  alert(name);
+ 
+	var speakWord = "Good Bye";
+		console.log(speakWord + " " + name);
+	}
+  window.byeSpeaker = byeSpeaker;
+  ///////////////////////////////////////////
+  function helloSpeaker(name)
+{
+//  alert(name);
+ 
+	var speakWord = "Hello";
+		console.log(speakWord + " " + name);
+	}
+  window.helloSpeaker = helloSpeaker;
+  </script>
  
 </body>
 </html>
